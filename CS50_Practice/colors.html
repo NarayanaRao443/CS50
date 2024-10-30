@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+</head>
+<script>
+//    document.addEventListener('DOMContentLoaded',function(){
+//     document.querySelector('#red').onclick = function(){
+//         document.querySelector('#hello').style.color = 'red';
+//     }
+
+//     document.querySelector('#green').onclick = function(){
+//         document.querySelector('#hello').style.backgroundColor = 'green';
+//     }
+
+//     document.querySelector('#blue').onclick = function(){
+//         document.querySelector('#hello').style.color = 'blue';
+//     }
+//    })
+
+
+// document.addEventListener('DOMContentLoaded',function(){
+//     document.querySelectorAll('button').forEach(function(button){
+//         button.onclick = function(){
+//             document.querySelector('#hello').style.backgroundColor = button.dataset.color;
+//         }
+//     })
+// })
+
+    document.addEventListener('DOMContentLoaded',function(){
+        document.querySelector('select').onchange = function(){
+          //  document.querySelector('#hello').style.color = this.value;
+            document.querySelector('body').style.backgroundColor = this.value;
+        }
+    })
+</script>
+<body>
+    <h1 id="hello">Hello</h1>
+<!-- 
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="blue">Blue</button> -->
+
+    <!-- <button data-color = "red">Red</button>
+    <button data-color="green">Green</button>
+    <button data-color="blue">Blue</button> -->
+
+        <select name="" value="">
+            <option value="black">Black</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+        </select>
+</body>
+</html>
