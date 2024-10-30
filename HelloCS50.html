@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50</title>
+    <script>
+        function hello()
+        {
+         //   alert("Helll World");
+         
+            if (document.querySelector('h1').innerHTML == 'Hello') {
+                    document.querySelector('h1').innerHTML = 'Good Bye!';
+            } else {
+                    document.querySelector('h1').innerHTML = 'Hello';
+                
+            }
+            
+
+            // const heading = document.querySelector('h1');
+            // if(heading.innerHTML == 'Hello')
+            // {
+            //     heading.innerHTML = 'Good bye!';
+            // }
+            // else
+            // {
+            //     heading.innerHTML = 'Hello';
+            // }
+        }
+    </script>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="hello()">Click Here</button>
+</body>
+</html>
